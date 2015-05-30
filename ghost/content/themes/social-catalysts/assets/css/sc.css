@@ -123,3 +123,7 @@ body {
 .post-header-home-page .post-title {
     font-size: 3rem;
 }
+
+.site-footer .button-jump-top {
+    bottom: 30px;
+}
