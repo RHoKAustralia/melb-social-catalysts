@@ -1,0 +1,31 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+.sc-header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.sc-header-left,
+.sc-header-right {
+    margin: 0;
+    padding: 0;
+    width: 45%;
+    display: inline-block;
+}
+
+.sc-header-left h1,
+.sc-header-left h2 {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.sc-header-left .logo img {
+    width: 60px;
+    height: 60px;
+    margin: 10px 10px 0 30px;
+}
