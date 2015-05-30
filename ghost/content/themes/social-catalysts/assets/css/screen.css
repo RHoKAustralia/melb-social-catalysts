@@ -429,6 +429,20 @@ table.plain {
     text-indent: 10px;
 }
 
+.tile-image {
+    width: 100%;
+}
+
+.post-tags {
+    border-top:1px solid #d3d3d3;
+    font-size:12px;
+    color:#999;
+}
+
+.post-tags a {
+    text-transform: uppercase;
+}
+
 /* Every post, on every page, gets this style on its <article> tag */
 .post {
     position: relative;
@@ -436,8 +450,8 @@ table.plain {
     hyphens: auto;    
     background-color:white; 
     width: 28%; 
-    min-height: 350px;
-    height: 400px; 
+    min-height: 150px;
+    height: auto;
     float:left;
     -webkit-border-radius: 3px;
     border-radius: 3px;
@@ -451,25 +465,6 @@ table.plain {
     box-shadow: 1px 2px 7px -2px rgba(0, 0, 0, 0.3);
 }
 
-/* Add a little circle in the middle of the border-top on our .post
-   just for the lolz and stylepoints. */
-.post:after {
-    display: block;
-    content: "";
-    width: 7px;
-    height: 7px;
-    border: #d8d8d8 1px solid;
-    position: absolute;
-    top: -3px;
-    left: 50%;
-    margin-left: -5px;
-    background: #fff;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-    box-shadow: #fff 0 0 0 5px;
-}
-
 .post-title {
     margin:0;
     width:80%;
@@ -480,7 +475,7 @@ table.plain {
 }
 
 .post-excerpt p {
-    margin: 1.6rem 0 0 0;
+    margin: 1.6rem 0 1.6rem 0;
     font-size: 0.9em;
     line-height: 1.6em;
 }
@@ -649,6 +644,10 @@ table.plain {
 /* Insert some mad padding up in the header for better spacing */
 .post-template .post-header {
     padding: 60px 0;
+}
+
+.post-template .post-image {
+    width: 100%;
 }
 
 .post-content img {
@@ -944,7 +943,7 @@ table.plain {
     .post {
         font-size: 0.9em;
         line-height: 1.6em;
-        width:25%;
+        width:30%;
     }
     
 }
@@ -958,7 +957,7 @@ table.plain {
     .post {
         font-size: 0.9em;
         line-height: 1.6em;
-        width:40%;
+        width:45%;
     }
     
 }

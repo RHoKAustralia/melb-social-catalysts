@@ -1,0 +1,133 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: none;
+}
+
+.sc-header {
+    width: 100%;
+    height: 65px;
+    margin: 0;
+    padding: 0;
+    background: #f2620f;
+}
+
+.sc-header-right {
+    float: right;
+    margin: 15px 25px 0 0;
+}
+
+.sc-header a,
+.sc-header h1,
+.sc-header h2 {
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+.sc-header h1 {
+    font-family: 'PT Sans', sans-serif;
+    padding: 12px 15px 0 20px;
+    font-size: 3.65rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.sc-header h2 {
+    padding: 17px 0 0;
+    font-size: 3.0rem;
+    color: #e5e5e5;
+    font-weight: 400;
+}
+
+.sc-header .logo img {
+    width: 60px;
+    height: 60px;
+    margin: 10px 10px 0 30px;
+}
+
+.sc-header .top-menu-link,
+.sc-header .top-menu-icon {
+    color: #f5f5f5;
+}
+
+.sc-header .top-menu-link:hover,
+.sc-header .top-menu-icon:hover {
+    color: #e5e5e5;
+}
+
+.sc-header .top-menu-link {
+    padding: 5px 10px;
+    text-decoration: none;
+}
+.sc-header .top-menu-link:hover {
+    text-decoration: underline;
+}
+
+.sc-header .top-menu-icon {
+    padding: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+    .sc-header h2 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .sc-header {
+        height: 45px;
+    }
+
+    .sc-header h1,
+    .sc-header h2 {
+        display: none;
+        visibility: hidden;
+    }
+
+    .sc-header-right {
+        float: left;
+        margin: 5px 10px 0 15px;
+    }
+}
+
+
+/* article list css */
+.content article {
+    padding: 0;
+}
+
+.content .post-title,
+.content .post-meta,
+.content .post-excerpt,
+.content .post-tags,
+.content .post-content {
+    margin: 0 15px;
+}
+
+.content .post-excerpt a {
+    text-decoration: none;
+}
+
+.content .post-title {
+    width: 90%;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 4.2rem;
+}
+
+/* give header smaller size on list */
+.post-header-home-page .post-title {
+    font-size: 3rem;
+}
+
+.site-footer .button-jump-top {
+    bottom: 30px;
+}
+
+.footer-tags-item {
+    padding-right: 15px;
+}
