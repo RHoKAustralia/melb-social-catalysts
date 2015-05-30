@@ -655,6 +655,10 @@ table.plain {
     padding: 60px 0;
 }
 
+.post-template .post-image {
+    width: 100%;
+}
+
 .post-content img {
     display: block;
     margin: 0 auto;
