@@ -12,9 +12,9 @@
     {{! Each post will be output using this markup }}
     {{#foreach posts}}
 
-        <article class="post-title {{post_class}}">
+        <article class="{{post_class}}">
             <header class="post-header">
-                {{#if image}} <a href="{{url}}"><img src="{{image}}"/></a> {{/if}}
+                {{#if image}} <a href="{{url}}"><img class="tile-image" src="{{image}}"/></a> {{/if}}
                 <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
                 <section class="post-meta">
                     {{author}} on <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
