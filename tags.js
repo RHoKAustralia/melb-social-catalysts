@@ -24,6 +24,11 @@ function _LOG(ACTION, MESSAGE) {
     console.log(output.join(''));
 }
 
+function xhrMiddleware(req, res, next) {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    next();
+}
+
 function getTags(req, res) {
     var db = new sqlite3.Database(dbfile);
     db.serialize(function() {
@@ -42,6 +47,8 @@ function started() {
 }
 
 var app = express();
+
+app.use(xhrMiddleware);
 
 app.get('/', getTags);
 
