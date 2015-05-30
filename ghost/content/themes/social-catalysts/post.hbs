@@ -22,17 +22,19 @@
         <footer class="post-footer">
 
             {{#if author}}
-                <section class="author">
-                    {{#if author.image}}
-                        <img src="{{author.image}}" alt="Author" class="author-img" />
-                    {{/if}}
-                    <h4>{{author.name}}</h4>
-                    <p>Author</p>
-                    {{#if author.bio}}
-                        <p>{{author.bio}}</p>
-                    {{/if}}
-                    <p>Read <a href="{{url}}">more posts</a> by {{author.name}}.</p>
-                </section>
+                {{#author}}
+                    <section class="author">
+                        {{#if image}}
+                            <img src="{{image}}" alt="Author" class="author-img" />
+                        {{/if}}
+                        <h4>{{name}}</h4>
+                        <p>Author</p>
+                        {{#if bio}}
+                            <p>{{bio}}</p>
+                        {{/if}}
+                        <p>Read <a href="{{url}}">more posts</a> by {{name}}.</p>
+                    </section>
+                {{/author}}
             {{/if}}
 
             <section class="share">
