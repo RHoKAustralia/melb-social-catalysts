@@ -17,7 +17,7 @@ body {
 
 .sc-header-right {
     float: right;
-    margin: 25px 25px 0 0;
+    margin: 15px 25px 0 0;
 }
 
 .sc-header a,
@@ -30,12 +30,17 @@ body {
 
 .sc-header h1 {
     font-family: 'PT Sans', sans-serif;
-    padding: 5px 10px 0 20px
+    padding: 12px 15px 0 20px;
+    font-size: 3.65rem;
+    color: #fff;
+    font-weight: 400;
 }
 
 .sc-header h2 {
-    padding: 15px 0 0 0;
-    font-size: 3.65rem;
+    padding: 17px 0 0;
+    font-size: 3.0rem;
+    color: #e5e5e5;
+    font-weight: 400;
 }
 
 .sc-header .logo img {
@@ -44,8 +49,26 @@ body {
     margin: 10px 10px 0 30px;
 }
 
+.sc-header .top-menu-link,
+.sc-header .top-menu-icon {
+    color: #f5f5f5;
+}
+
+.sc-header .top-menu-link:hover,
+.sc-header .top-menu-icon:hover {
+    color: #e5e5e5;
+}
+
 .sc-header .top-menu-link {
-    padding: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+.sc-header .top-menu-link:hover {
+    text-decoration: underline;
+}
+
+.sc-header .top-menu-icon {
+    padding: 10px;
 }
 
 @media only screen and (max-width: 900px) {
