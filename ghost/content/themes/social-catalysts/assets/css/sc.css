@@ -90,7 +90,7 @@ body {
 
     .sc-header-right {
         float: left;
-        margin: 10px 10px 0 15px;
+        margin: 5px 10px 0 15px;
     }
 }
 
@@ -103,10 +103,23 @@ body {
 .content .post-title,
 .content .post-meta,
 .content .post-excerpt,
-.content .post-tags {
-    margin: 15px;
+.content .post-tags,
+.content .post-content {
+    margin: 0 15px;
 }
 
 .content .post-excerpt a {
     text-decoration: none;
+}
+
+.content .post-title {
+    width: 90%;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 4.2rem;
+}
+
+/* give header smaller size on list */
+.post-header-home-page .post-title {
+    font-size: 3rem;
 }
