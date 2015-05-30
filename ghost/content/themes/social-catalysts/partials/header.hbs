@@ -1,12 +1,11 @@
 <div class="sc-header">
 
-    <div class="sc-header-left">
-        <a class="logo" href="/"><img src="{{asset "images/sc-logo.png"}}" alt="" /></a>
-        <h1 class="title">{{@blog.title}}</h1>
-        <h2 class="description">{{@blog.description}}</h2>
-    </div>
+    <h1 class="title">{{@blog.title}}</h1>
+    <h2 class="description">{{@blog.description}}</h2>
 
     <div class="sc-header-right">
+        <a href="#" class="top-menu-link">About</a>
+        <a href="#" class="top-menu-link">Submit Article</a>
         <a class="icon-twitter" href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"
            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
             <span class="hidden">Twitter</span>

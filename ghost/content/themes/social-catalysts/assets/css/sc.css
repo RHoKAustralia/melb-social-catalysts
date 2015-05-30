@@ -3,29 +3,70 @@ html, body {
     margin: 0;
 }
 
+body {
+    background: none;
+}
+
 .sc-header {
     width: 100%;
+    height: 65px;
     margin: 0;
     padding: 0;
+    background: #f2620f;
 }
 
-.sc-header-left,
 .sc-header-right {
-    margin: 0;
-    padding: 0;
-    width: 45%;
-    display: inline-block;
+    float: right;
+    margin: 25px 25px 0 0;
 }
 
-.sc-header-left h1,
-.sc-header-left h2 {
-    display: inline-block;
+.sc-header a,
+.sc-header h1,
+.sc-header h2 {
+    float: left;
     padding: 0;
     margin: 0;
 }
 
-.sc-header-left .logo img {
+.sc-header h1 {
+    font-family: 'PT Sans', sans-serif;
+    padding: 5px 10px 0 20px
+}
+
+.sc-header h2 {
+    padding: 15px 0 0 0;
+    font-size: 3.65rem;
+}
+
+.sc-header .logo img {
     width: 60px;
     height: 60px;
     margin: 10px 10px 0 30px;
+}
+
+.sc-header .top-menu-link {
+    padding: 5px;
+}
+
+@media only screen and (max-width: 900px) {
+    .sc-header h2 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .sc-header {
+        height: 45px;
+    }
+
+    .sc-header h1,
+    .sc-header h2 {
+        display: none;
+        visibility: hidden;
+    }
+
+    .sc-header-right {
+        float: left;
+        margin: 10px 10px 0 15px;
+    }
 }
