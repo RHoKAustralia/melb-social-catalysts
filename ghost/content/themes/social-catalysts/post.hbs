@@ -35,6 +35,10 @@
                         <p>Read <a href="{{url}}">more posts</a> by {{name}}.</p>
                     </section>
                 {{/author}}
+                <section style="border-top:1px solid #d3d3d3; font-size:12px; color:#999;">#Tags: 
+                   {{#tags}}<li>{{name}}</li>{{/tags}}
+                </section>
+
             {{/if}}
 
             <section class="share">
