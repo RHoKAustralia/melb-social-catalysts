@@ -12,7 +12,7 @@
     {{! Each post will be output using this markup }}
     {{#foreach posts}}
 
-        <article class="{{post_class}}">
+        <article class="post-title {{post_class}}">
             <header class="post-header">
                 <span class="newsDate"><h4><time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD'}}</time></h4><span><time datetime="{{date format="YYYY-MM-DD"}}">{{date format='MMM'}}</time></span><span><time datetime="{{date format="YYYY-MM-DD"}}">{{date format='YYYY'}}</time></span></span>
                 {{#if image}} <img src="{{image}}"/> {{/if}}
