@@ -93,3 +93,20 @@ body {
         margin: 10px 10px 0 15px;
     }
 }
+
+
+/* article list css */
+.content article {
+    padding: 0;
+}
+
+.content .post-title,
+.content .post-meta,
+.content .post-excerpt,
+.content .post-tags {
+    margin: 15px;
+}
+
+.content .post-excerpt a {
+    text-decoration: none;
+}
