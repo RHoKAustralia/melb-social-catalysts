@@ -127,3 +127,7 @@ body {
 .site-footer .button-jump-top {
     bottom: 30px;
 }
+
+.footer-tags-item {
+    padding-right: 15px;
+}

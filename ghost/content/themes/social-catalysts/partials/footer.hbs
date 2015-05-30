@@ -2,6 +2,32 @@
     <a class="subscribe icon-feed" href="{{@blog.url}}/rss/"><span class="tooltip">Subscribe!</span></a>
     <div class="inner">
         <section class="copyright">&copy; <a href="/">{{@blog.title}}</a></section>
+        <div class="footer-tags">loading list of tags...</div>
     </div>
     <section><a class="button-rounded button-jump-top js-jump-top" href="#"></a></section>
 </footer>
+<script>
+    $(function() {
+        function createTag(tag) {
+
+            return [
+                '<a href="', tag.url, '" class="footer-tags-item">', tag.name, '</a>'
+            ].join('');
+        }
+
+        function processTags(tags) {
+            var tagItemsEl = tags.map(createTag);
+            tagsEl.html(tagItemsEl);
+        }
+
+        var tagsEl = $('.footer-tags');
+
+        $.ajax({
+            dataType: 'json',
+            method: 'get',
+            url: 'http://localhost:2000',
+            success: processTags,
+            crossDomain: true
+        });
+    });
+</script>
