@@ -441,7 +441,7 @@ table.plain {
     background-color:white; 
     width: 28%; 
     min-height: 350px;
-    height: 400px; 
+    height: auto;
     float:left;
     -webkit-border-radius: 3px;
     border-radius: 3px;
