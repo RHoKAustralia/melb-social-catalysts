@@ -36,6 +36,10 @@
                     <img src="{{author.image}}" alt="Author" class="author-img" />
                     <h4>{{author.name}}</h4>
                     <p>Author</p>
+                    {{#if author.bio}}
+                        <p>{{author.bio}}</p>
+                    {{/if}}
+                    <p>Read <a href="{{url}}">more posts</a> by {{author.name}}.</p>
                 </section>
             {{/if}}
 
