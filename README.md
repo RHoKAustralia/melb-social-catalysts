@@ -3,6 +3,9 @@
 ##Installation Instructions
 npm install --production
 
+###Node version
+v0.10.13
+
 ##Run Local Server Instructions
 npm start
 
