@@ -429,6 +429,10 @@ table.plain {
     text-indent: 10px;
 }
 
+.home-template .post-header img {
+    width: 100%;
+}
+
 /* Every post, on every page, gets this style on its <article> tag */
 .post {
     position: relative;
