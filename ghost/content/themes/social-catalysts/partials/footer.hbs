@@ -25,12 +25,9 @@
         $.ajax({
             dataType: 'json',
             method: 'get',
-            url: 'http://localhost:2000',
-            success: processTags,
-            crossDomain: true,
-            xhrFields: {
-                withCredentials: true
-            }
+            url: '{{asset "tags.json"}}',
+            success: processTags
+
         });
     });
 </script>

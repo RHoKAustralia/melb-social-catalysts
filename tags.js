@@ -1,6 +1,7 @@
 var sqlite3 = require('sqlite3');
 var express = require('express');
 var moment = require('moment');
+var fs = require('fs');
 
 var env = process.env.NODE_ENV || 'development';
 var port = process.env.PORT || 2000;
@@ -26,19 +27,42 @@ function _LOG(ACTION, MESSAGE) {
 
 function xhrMiddleware(req, res, next) {
     res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET');
     next();
 }
 
-function getTags(req, res) {
+function getTags(cb) {
     var db = new sqlite3.Database(dbfile);
     db.serialize(function() {
         db.all("select * from tags", function(err, rows) {
+            if (err) {
+                return cb(err);
+            }
             var tags = rows.map(processTag);
             _LOG('GET', 'FETCHING TAGS');
             db.close();
-            res.json(tags);
             db = null;
+            return cb(false, tags);
         })
+    });
+}
+
+function resonseWithTags(req, res) {
+    getTags(function(err, tags) {
+        if (err) {
+            res.status(500);
+        } else {
+            res.json(tags);
+        }
+    });
+}
+
+function writeDataFile() {
+    getTags(function(err, tags) {
+        if (err) {
+            throw err;
+        }
+        fs.writeFileSync('ghost/content/themes/social-catalysts/assets/tags.json', JSON.stringify(tags));
     });
 }
 
@@ -46,10 +70,11 @@ function started() {
     _LOG('STARTED', 'GHOST TAGS SERVICE: PORT ' + port);
 }
 
-var app = express();
+function startService() {
+    var app = express();
+    app.use(xhrMiddleware);
+    app.get('/', getTags);
+    app.listen(port, started);
+}
 
-app.use(xhrMiddleware);
-
-app.get('/', getTags);
-
-app.listen(port, started);
+writeDataFile();

@@ -30,7 +30,7 @@ body {
     height: 65px;
     margin: 0;
     padding: 0;
-    background: #f2620f;
+    background: #F2620F;
 }
 
 .sc-header-right {
@@ -86,7 +86,11 @@ body {
 }
 
 .sc-header .top-menu-icon {
-    padding: 10px;
+    padding: 2px 10px;
+}
+
+.sc-header .top-menu-icon:first-child {
+    padding-left: 15px;
 }
 
 @media only screen and (max-width: 900px) {
