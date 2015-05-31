@@ -449,7 +449,7 @@ table.plain {
     word-break: break-word;
     hyphens: auto;    
     background-color:white; 
-    width: 28%; 
+    width: 30%;
     min-height: 150px;
     height: auto;
     float:left;
@@ -943,7 +943,7 @@ table.plain {
     .post {
         font-size: 0.9em;
         line-height: 1.6em;
-        width:30%;
+        width:26%;
     }
     
 }
