@@ -16,7 +16,7 @@ npm start
 127.0.0.1:2368/ghost
 
 ##Local Server Admin login
-username:	admin@socialcatalyst.net
+username:	admin@socialcatalysts.net
 password: password
 
 
