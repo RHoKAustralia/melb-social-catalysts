@@ -163,6 +163,7 @@ body {
 .site-footer .inner {
     width: 100%;
     display: block;
+    max-width: 100%;
 }
 
 .site-footer .footer-menu-link,
