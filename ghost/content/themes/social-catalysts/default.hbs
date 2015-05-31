@@ -8,7 +8,7 @@
     {{! Page Meta }}
     <title>{{meta_title}}</title>
     <meta name="description" content="{{meta_description}}" />
-
+    {{#post}}<meta name="keywords" content="{{#foreach tags}}{{name}}{{#unless @last}},{{/unless}}{{/foreach}}">{{/post}}
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
