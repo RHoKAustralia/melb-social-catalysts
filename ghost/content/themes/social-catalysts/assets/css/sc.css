@@ -130,6 +130,10 @@ body {
     margin: 0 15px;
 }
 
+.content .post-newsDate {
+    background: #F2C029;
+}
+
 .content .post-excerpt a {
     text-decoration: none;
 }
