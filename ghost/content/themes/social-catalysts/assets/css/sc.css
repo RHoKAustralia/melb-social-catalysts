@@ -181,8 +181,9 @@ body {
 .footer-tags {
     display: inline-block;
     width: 100%;
+    padding-left: 4px;
 }
 .footer-tags-item {
-    padding: 0px 12px 0 3px;
+    padding: 0px 12px 0 0;
     text-transform: uppercase;
 }
