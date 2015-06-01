@@ -93,30 +93,6 @@ body {
     padding-left: 15px;
 }
 
-@media only screen and (max-width: 900px) {
-    .sc-header h2 {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 550px) {
-    .sc-header {
-        height: 45px;
-    }
-
-    .sc-header h1,
-    .sc-header h2 {
-        display: none;
-        visibility: hidden;
-    }
-
-    .sc-header-right {
-        float: left;
-        margin: 5px 10px 0 15px;
-    }
-}
-
-
 /* article list css */
 .content article {
     padding: 0;
