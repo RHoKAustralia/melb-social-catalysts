@@ -1,21 +1,25 @@
 # Social Catalysts
 
-##Installation Instructions
+###Setup
+
+#####Installation Instructions
 npm install --production
 
-###Node version
+#####Node version
 v0.10.13
 
-##Run Local Server Instructions
+###Local Server
+
+#####Start
 npm start
 
-##Local server URL
+#####URL
 127.0.0.1:2368
 
-##Local Server Admin
+#####Admin
 127.0.0.1:2368/ghost
 
-##Local Server Admin login
+#####Admin login
 username:	admin@socialcatalysts.net
 password: password
 
