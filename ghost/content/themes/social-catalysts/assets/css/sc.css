@@ -169,9 +169,11 @@ body {
 
 .footer-tags {
     display: inline-block;
-    width: 100%;
+    width: 90%;
     padding-left: 4px;
+    margin-right: 45px;
 }
+
 .footer-tags-item {
     padding: 0px 12px 0 0;
     text-transform: uppercase;
