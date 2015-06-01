@@ -18,6 +18,7 @@
     .post {
         width: 100%;
         border: none;
+        margin: 0;
     }
 
     .post-tags {
@@ -76,5 +77,11 @@
 
     .top-menu-link-sm {
         display: inline-block;
+    }
+
+    .footer-tags {
+        width: 90%;
+        padding-left: 4px;
+        margin-right: 45px;
     }
 }
