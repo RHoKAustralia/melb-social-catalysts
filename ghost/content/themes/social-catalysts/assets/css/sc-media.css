@@ -1,3 +1,7 @@
+.top-menu-link-sm {
+    display: none;
+}
+
 @media only screen and (max-width: 1150px) {
     .post {
         width: 45%;
@@ -62,7 +66,15 @@
     }
 
     .sc-header-right {
-        /*float: left;*/
+        float: left;
         margin: 5px 10px 0 15px;
+    }
+
+    .top-menu-link-sm-hide {
+        display: none;
+    }
+
+    .top-menu-link-sm {
+        display: inline-block;
     }
 }
