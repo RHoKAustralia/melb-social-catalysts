@@ -24,3 +24,6 @@ username:	admin@socialcatalysts.net
 password: password
 
 
+###Devops scripts
+
+Can be found in `/scripts` directory
