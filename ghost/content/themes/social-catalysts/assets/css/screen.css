@@ -97,9 +97,9 @@ body {
     font-size: 1.8rem;
     line-height: 1.6em;
     color: #3A4145;
-    background-color: #f8f9fa;
+   /* background-color: #f8f9fa;
     background-image:url(../images/pattern.jpg);
-    background-repeat:repeat;
+    background-repeat:repeat; */ 
 }
 
 ::-moz-selection {
@@ -581,7 +581,7 @@ table tbody > tr:nth-child(odd) > th {
 .button-rounded {
     width:32px;
     height:32px;
-    background: url(../images/icon-up.png) no-repeat;
+    /*background: url(../images/icon-up.png) no-repeat center; */
     z-index:999;
     position:absolute;
     margin-top: 10px;
@@ -870,8 +870,9 @@ table tbody > tr:nth-child(odd) > th {
     text-align: center;
     line-height: 2.4rem;
     border-radius: 50px;
-    background: #fff;
+    /*background: ; */
     transition: box-shadow 0.5s;
+	background: url(../images/icon-up.png) no-repeat center #fff;
 }
 
 /* The RSS icon, inserted via icon font */
@@ -889,6 +890,7 @@ table tbody > tr:nth-child(odd) > th {
 .subscribe:hover {
     box-shadow: rgba(0,0,0,0.05) 0 0 0 3px;
     transition: box-shadow 0.25s;
+	background-color: #DADADA;
 }
 
 .subscribe:hover:before {

@@ -22,7 +22,8 @@ html, body {
 /*========================================================================*/
 
 body {
-    background: none;
+   /* background: none; */
+   background: url(../images/pattern.png) #f8f9fa repeat;
 }
 
 .sc-header {
