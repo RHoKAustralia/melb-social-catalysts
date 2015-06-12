@@ -23,13 +23,23 @@
 <script>
     $(function() {
         function createTag(tag) {
-
             return [
                 '<a href="', tag.url, '" class="footer-tags-item">', tag.name, '</a>'
             ].join('');
         }
 
+        function alphabeticalComparator(a, b) {
+            if (a.name < b.name) {
+                return -1;
+            }
+            if (a.name > b.name) {
+                return 1;
+            }
+            return 0;
+        }
+
         function processTags(tags) {
+            tags.sort(alphabeticalComparator);
             var tagItemsEl = tags.map(createTag);
             tagsEl.html(tagItemsEl);
         }

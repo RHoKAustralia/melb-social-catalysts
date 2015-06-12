@@ -28,8 +28,8 @@
                 <p><a class="read-more" href="{{url}}">{{excerpt}}&hellip;</a></p>
             </section>
             {{#if tags}}
-                <section class="post-tags">#Tags: 
-                   {{#tags}}<li>{{name}}</li>{{/tags}}
+                <section class="post-tags">
+                    {{tags separator=""}}
                 </section>
             {{/if}}
         </article>
