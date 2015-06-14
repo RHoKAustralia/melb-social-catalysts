@@ -123,11 +123,6 @@ body {
     background-position: 0px;
 }
 
-.home-template .post {
-    float: none;
-    display: inline-block;
-}
-
 .content .post-newsDate {
     background: #F2C029;
 }
