@@ -94,7 +94,7 @@
     }
 
     .sc-header-right a.top-menu-icon {
-        float: right;
-        padding: 5px;
+        float: left;
+        padding: 5px 0 0 10px;
     }
 }
