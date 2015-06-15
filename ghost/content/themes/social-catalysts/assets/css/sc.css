@@ -100,10 +100,13 @@ body {
 
 .content .post-title,
 .content .post-meta,
-.content .post-excerpt,
 .content .post-tags,
 .content .post-content {
     margin: 4px 15px;
+}
+
+.content .post-excerpt {
+    margin: 0 15px;
 }
 
 .content .post-title {
@@ -136,7 +139,6 @@ body {
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
     font-size: 4.2rem;
-    /*padding-top: 10px;*/
 }
 
 /* give header smaller size on list */

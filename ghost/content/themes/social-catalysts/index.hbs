@@ -33,7 +33,7 @@
                 </section>
             {{/if}}
         </article>
-    
+
     {{/foreach}}
 
     {{!! After all the posts, we have the previous/next pagination links }}
@@ -42,14 +42,26 @@
 </main>
 <script>
     $(function() {
-        function getHeight(el) {
-            return $(el).outerHeight();
+        function resetHeights() {
+            var offset = 35;
+            var articleSelectors = ['header', 'section.post-excerpt', 'section.post-tags'];
+
+            function getHeight(el) {
+                var $el = $(el);
+                var height = 0;
+                articleSelectors.forEach(function(selector) {
+                    height += $el.find(selector).outerHeight();
+                });
+                return height;
+            }
+
+            var heights = $.map($('article'), getHeight);
+            var maxHeight = Math.max.apply(null, heights) + offset;
+
+            $('article').outerHeight(maxHeight);
         }
 
-        var heights = $.map($('article'), getHeight);
-        var maxHeight = Math.max.apply(null, heights);
-
-        $('article').outerHeight(maxHeight);
-
+        resetHeights();
+        $(window).resize(resetHeights);
     });
 </script>
