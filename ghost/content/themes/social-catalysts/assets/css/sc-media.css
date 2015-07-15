@@ -2,25 +2,28 @@
     display: none;
 }
 
-@media only screen and (max-width: 1150px) {
-    .post {
-        width: 45%;
-    }
-}
-
 @media only screen and (max-width: 990px) {
     .sc-header h2 {
         display: none;
     }
+    .tags-main-list {
+        width: 30%;
+        margin-right: 0;
+    }
+
+    .home-template .content,
+    .archive-template .content {
+        width: 60%;
+        margin-left: 0;
+    }
+
+    .home-template .post,
+    .archive-template .post {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 660px) {
-    .post {
-        width: 100%;
-        border: none;
-        margin: 0;
-    }
-
     .post-tags {
         padding-bottom: 20px;
     }
@@ -55,7 +58,8 @@
     }
 }
 
-@media only screen and (max-width: 580px) {
+/* small screen styles */
+@media only screen and (max-width: 700px) {
     .sc-header {
         height: 45px;
     }
@@ -96,5 +100,28 @@
     .sc-header-right a.top-menu-icon {
         float: left;
         padding: 5px 0 0 10px;
+    }
+
+    .tags-main-list,
+    .home-template .content,
+    .archive-template .content,
+    .home-template .post,
+    .archive-template .post {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .home-template .post,
+    .archive-template .post {
+        margin-top: 15px;
+    }
+}
+
+/* reaaaally small screens */
+@media only screen and (max-width: 500px) {
+    .tags-main-list {
+        display: none;
     }
 }

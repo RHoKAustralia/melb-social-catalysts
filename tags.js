@@ -33,8 +33,14 @@ function xhrMiddleware(req, res, next) {
 
 function getTags(cb) {
     var db = new sqlite3.Database(dbfile);
+
+    var SQL = 'select tags.name, tags.slug, max(posts.published_at) as last_published_at ' +
+        'from tags, posts, posts_tags ' +
+        'where tags.id = posts_tags.tag_id and posts.id = posts_tags.post_id ' +
+        'group by tags.name, tags.slug order by last_published_at desc';
+
     db.serialize(function() {
-        db.all("select * from tags", function(err, rows) {
+        db.all(SQL, function(err, rows) {
             if (err) {
                 return cb(err);
             }
