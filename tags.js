@@ -10,6 +10,7 @@ var config = require('./ghost/config');
 var dbfile = config[env].database.connection.filename;
 
 function processTag(tag) {
+    _LOG('INFO', tag);
     return {
         name: tag.name,
         url: '/tag/' + tag.slug
@@ -45,7 +46,7 @@ function getTags(cb) {
                 return cb(err);
             }
             var tags = rows.map(processTag);
-            _LOG('GET', 'FETCHING TAGS');
+            _LOG('GET', 'FETCHED TAGS', rows.length);
             db.close();
             db = null;
             return cb(false, tags);
