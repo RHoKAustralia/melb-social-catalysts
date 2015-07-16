@@ -24,7 +24,6 @@
 
     function triggerTagsLoaded(tags) {
         tagsCache = tags;
-        console.log('loaded', tagsCache);
         window.document.dispatchEvent(TagsLoaded);
     }
 
