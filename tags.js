@@ -10,7 +10,6 @@ var config = require('./ghost/config');
 var dbfile = config[env].database.connection.filename;
 
 function processTag(tag) {
-    _LOG('INFO', tag);
     return {
         name: tag.name,
         url: '/tag/' + tag.slug
