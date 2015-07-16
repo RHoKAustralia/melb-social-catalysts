@@ -142,13 +142,17 @@ body {
 }
 
 .home-template .content,
-.archive-template .content {
+.archive-template .content,
+.tag-template .content,
+.author-template .content {
     display: inline-block;
     width: 70%;
 }
 
 .home-template .tile-image,
-.archive-template .tile-image {
+.tag-template .tile-image,
+.archive-template .tile-image,
+.author-template .tile-image {
     width: 100%;
     background-size: cover;
     height: 250px;
