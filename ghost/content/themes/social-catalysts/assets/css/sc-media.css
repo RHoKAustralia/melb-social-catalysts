@@ -122,6 +122,13 @@
         border: none;
     }
 
+    .home-template .post:first-child,
+    .tag-template .post:first-child,
+    .archive-template .post:first-child,
+    .author-template .post:first-child {
+        padding: 10px 0;
+    }
+
     .home-template .post,
     .tag-template .post,
     .archive-template .post,
