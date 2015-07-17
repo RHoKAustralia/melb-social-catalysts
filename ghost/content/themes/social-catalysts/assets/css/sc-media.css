@@ -119,18 +119,23 @@
         margin: 0;
         padding: 0;
         box-shadow: none;
+        border: none;
     }
 
     .home-template .post,
     .tag-template .post,
     .archive-template .post,
     .author-template .post {
-        margin-top: 15px;
+        padding: 0 0 10px 0;
+        border-bottom: 1px solid #ccc;
     }
-}
 
-/* reaaaally small screens */
-@media only screen and (max-width: 500px) {
+    .newer-posts,
+    .older-posts {
+        border: none;
+        padding: 2px 15px;
+    }
+
     .tags-main-list {
         display: none;
     }
