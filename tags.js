@@ -38,7 +38,7 @@ function getTags(cb) {
         'from tags, posts, posts_tags ' +
         'where tags.id = posts_tags.tag_id and posts.id = posts_tags.post_id ' +
         'group by tags.name, tags.slug ' +
-        'order by last_published_at desc, tags.name asc';
+        'order by last_published_at desc';
 
     db.serialize(function() {
         db.all(SQL, function(err, rows) {
