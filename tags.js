@@ -37,6 +37,7 @@ function getTags(cb) {
     var SQL = 'select distinct tags.name, tags.slug, posts.published_at as last_published_at ' +
         'from tags, posts, posts_tags ' +
         'where tags.id = posts_tags.tag_id and posts.id = posts_tags.post_id ' +
+        'group by tags.name, tags.slug ' +
         'order by last_published_at desc, tags.name asc';
 
     db.serialize(function() {
@@ -45,7 +46,7 @@ function getTags(cb) {
                 return cb(err);
             }
             var tags = rows.map(processTag);
-            _LOG('GET', 'FETCHED TAGS', rows.length);
+            _LOG('GET', 'FETCHED TAGS: ' + rows.length);
             db.close();
             db = null;
             return cb(false, tags);
