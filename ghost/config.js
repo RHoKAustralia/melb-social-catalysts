@@ -10,8 +10,18 @@ config = {
     // When running Ghost in the wild, use the production environment
     // Configure your URL and mail settings here
     production: {
-        url: 'http://socialcatalysts.net',
-        mail: {},
+        url: 'http://thetallgiraffe.net',
+        mail: {
+            from: '"The Tall Giraffe" <thetallgiraffe@outlook.com>',
+            transport: 'SMTP',
+            options: {
+                service: 'Gmail',
+                auth: {
+                    user: 'social.catalysts.donotreply@gmail.com',
+                    pass: 'Ezn-XYR-9D6-bBN'
+                }
+            }
+        },
         database: {
             client: 'sqlite3',
             connection: {
