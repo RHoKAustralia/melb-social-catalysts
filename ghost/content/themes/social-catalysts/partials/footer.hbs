@@ -21,7 +21,10 @@
 </footer>
 <script>
     $(function() {
-        window.sc.utils.fetchTags('{{asset "tags.json"}}');
+        window.sc.utils.fetchSideBarItems({
+            tagsUrl: '{{asset "tags.json"}}',
+            writersUrl: '{{asset "writers.json"}}'
+        });
     });
 </script>
 <script>

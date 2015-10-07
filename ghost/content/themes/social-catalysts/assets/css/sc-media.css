@@ -6,7 +6,7 @@
     .sc-header h2 {
         display: none;
     }
-    .tags-main-list {
+    .sidepanel {
         width: 30%;
         margin-right: 0;
     }
@@ -99,7 +99,7 @@
         padding: 5px 0 0 15px;
     }
 
-    .tags-main-list,
+    .sidepanel,
     .home-template .content,
     .archive-template .content,
     .tag-template .content,
@@ -136,7 +136,7 @@
         padding: 2px 15px;
     }
 
-    .tags-main-list {
+    .sidepanel {
         display: none;
     }
 }
