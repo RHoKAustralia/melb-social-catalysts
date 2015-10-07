@@ -10,7 +10,7 @@ config = {
     // When running Ghost in the wild, use the production environment
     // Configure your URL and mail settings here
     production: {
-        url: 'http://thetallgiraffe.net',
+        url: 'http://thetallgiraffe.org',
         mail: {
             from: '"The Tall Giraffe" <thetallgiraffe@outlook.com>',
             transport: 'SMTP',
