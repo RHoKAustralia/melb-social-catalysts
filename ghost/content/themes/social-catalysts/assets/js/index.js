@@ -34,7 +34,7 @@
     var writersCache = null;
 
     function createWriter(writer) {
-        return [
+        var htmlStart = [
             '<div class="writer">',
             '<div class="writer-name"><a href="',
             writer.url,
@@ -46,10 +46,27 @@
             encodeURIComponent(writer.lastPostSlug),
             '">',
             writer.lastPostTitle,
-            '</a>',
-            '</div>',
+            '</a></div>'
+        ];
+
+        var htmlImage = [
+            '<a href="',
+            writer.url,
+            '">',
+            '<div class="writer-image" ><img src="',
+            writer.bioImage,
+            '"/></div></a>',
+        ];
+
+        var htmlEnd = [
             '</div>'
-        ].join('');
+        ];
+
+        if (writer.bioImage) {
+            return htmlStart.concat(htmlImage, htmlEnd).join('');
+        } else {
+            return htmlStart.concat(htmlEnd).join('');
+        }
     }
 
     function processWritersElement(selector) {
