@@ -1,2 +1,6 @@
 node_modules
 .idea
+content/data
+content/images
+content/themes/social-catalysts/assets/tags.json
+content/themes/social-catalysts/assets/writers.json
