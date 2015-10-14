@@ -7,7 +7,7 @@
 
     function createTag(tag) {
         return [
-            '<a href="', encodeURIComponent(tag.url), '" class="tags-item">', tag.name, '</a>'
+            '<a href="', tag.url, '" class="tags-item">', tag.name, '</a>'
         ].join('');
     }
 
